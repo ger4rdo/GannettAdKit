@@ -1,0 +1,67 @@
+
+.unique-class-name,
+.unique-class-name * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.unique-class-name {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+/* Inner */
+
+.unique-class-name .inner-container {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    z-index: 0;
+}
+
+.size-320 .unique-class-name .inner-container {
+    height: 320px;
+    width: 320px;
+    margin-right: -160px;
+    margin-top: -160px;
+}
+
+.size-480 .unique-class-name .inner-container {
+    height: 480px;
+    width: 480px;
+    margin-right: -240px;
+    margin-top: -240px;
+}
+
+.size-600 .unique-class-name .inner-container {
+    height: 600px;
+    width: 600px;
+    margin-right: -300px;
+    margin-top: -300px;
+}
+
+.size-768 .unique-class-name .inner-container {
+    height: 768px;
+    width: 768px;
+    margin-right: -384px;
+    margin-top: -384px;
+}
+
+
+/* Outer */
+
+.unique-class-name .outer-container {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
