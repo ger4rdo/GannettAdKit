@@ -1,0 +1,138 @@
+
+.fuccillo-fpf,
+.fuccillo-fpf * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fuccillo-fpf {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+/* Inner */
+
+.fuccillo-fpf .inner-container {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    z-index: 0;
+
+    height: 768px;
+    width: 768px;
+    margin-right: -384px;
+    margin-top: -384px;
+}
+
+.size-320 .fuccillo-fpf .inner-container {
+    -webkit-transform: scale(0.38, 0.38);
+}
+
+.size-480 .fuccillo-fpf .inner-container {
+    -webkit-transform: scale(0.625, 0.625);
+}
+
+.size-600 .fuccillo-fpf .inner-container {
+    -webkit-transform: scale(0.781, 0.781);
+}
+
+/*
+.size-320 .fuccillo-fpf .inner-container {
+    height: 320px;
+    width: 320px;
+    margin-right: -160px;
+    margin-top: -160px;
+}
+
+.size-480 .fuccillo-fpf .inner-container {
+    height: 480px;
+    width: 480px;
+    margin-right: -240px;
+    margin-top: -240px;
+}
+
+.size-600 .fuccillo-fpf .inner-container {
+    height: 600px;
+    width: 600px;
+    margin-right: -300px;
+    margin-top: -300px;
+}
+
+.size-768 .fuccillo-fpf .inner-container {
+    height: 768px;
+    width: 768px;
+    margin-right: -384px;
+    margin-top: -384px;
+}
+*/
+
+
+/* Outer */
+
+.fuccillo-fpf .outer-container {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Location */
+
+.location-compontent-link {
+    color: rgb(255,255,255);
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-right: 53px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.location-compontent-link:after {
+    bottom: 0;
+    content: url('http://i.usatoday.net/adsolutions/demo/wegmans_full_page_flex/images/location-compontent-link-icon.png');
+    display: block;
+    height: 49px;
+    position: absolute;
+    right: 0;
+    width: 43px;
+}
+
+/* Creative */
+
+.fuccillo-fpf .inner-container .fuccillo-logo {
+    left: 37px;
+    position: absolute;
+    top: 20px;
+}
+
+.fuccillo-fpf .inner-container .location-compontent {
+    position: absolute;
+    right: 37px;
+    top: 57px;
+}
+
+.fuccillo-fpf .inner-container .location-compontent .location-compontent-link {
+    font-size: 24px;
+}
+
+.fuccillo-fpf .inner-container .main-cta {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
+
+.fuccillo-fpf .outer-container {
+    background-color: rgb(0,0,0);
+}

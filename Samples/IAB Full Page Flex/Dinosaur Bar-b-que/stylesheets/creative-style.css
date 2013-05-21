@@ -1,0 +1,361 @@
+@font-face {
+    font-family: 'GothomHTF';
+    src: url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFBla.eot');
+    src: url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFBla.eot?#iefix') format('embedded-opentype'),
+         url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFBla.woff') format('woff'),
+         url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFBla.ttf') format('truetype'),
+         url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFBla.svg#GothamHTF-Black') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'GothomHTF';
+    src: url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFMed.eot');
+    src: url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFMed.eot?#iefix') format('embedded-opentype'),
+         url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFMed.woff') format('woff'),
+         url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFMed.ttf') format('truetype'),
+         url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/fonts/GothaHTFMed.svg#GothamHTF-Medium') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+/* Main */
+
+.dinobbq-fpf,
+.dinobbq-fpf * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.dinobbq-fpf {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+/* Inner */
+
+.dinobbq-fpf .inner-container {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    z-index: 0;
+
+    height: 768px;
+    width: 768px;
+    margin-right: -384px;
+    margin-top: -384px;
+}
+
+.size-320 .dinobbq-fpf .inner-container {
+    -webkit-transform: scale(0.38, 0.38);
+}
+
+.size-480 .dinobbq-fpf .inner-container {
+    -webkit-transform: scale(0.625, 0.625);
+}
+
+.size-600 .dinobbq-fpf .inner-container {
+    -webkit-transform: scale(0.781, 0.781);
+}
+
+/*
+.size-320 .dinobbq-fpf .inner-container {
+    height: 320px;
+    width: 320px;
+    margin-right: -160px;
+    margin-top: -160px;
+}
+
+.size-480 .dinobbq-fpf .inner-container {
+    height: 480px;
+    width: 480px;
+    margin-right: -240px;
+    margin-top: -240px;
+}
+
+.size-600 .dinobbq-fpf .inner-container {
+    height: 600px;
+    width: 600px;
+    margin-right: -300px;
+    margin-top: -300px;
+}
+
+.size-768 .dinobbq-fpf .inner-container {
+    height: 768px;
+    width: 768px;
+    margin-right: -384px;
+    margin-top: -384px;
+}
+*/
+
+
+/* Outer */
+
+.dinobbq-fpf .outer-container {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Location */
+
+.location-compontent-link {
+    color: rgb(255,255,255);
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-right: 53px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.location-compontent-link:after {
+    bottom: 0;
+    content: url('http://i.usatoday.net/adsolutions/demo/wegmans_full_page_flex/images/location-compontent-link-icon.png');
+    display: block;
+    height: 49px;
+    position: absolute;
+    right: 0;
+    width: 43px;
+}
+
+/* Contact */
+
+.contact-compontent > p {
+    margin: 0 0 5px 0;
+}
+
+.contact-compontent > p > strong {
+    font-weight: bold;
+}
+
+/* Social */
+
+.social-compontent-button {
+    background: transparent url('http://i.usatoday.net/adsolutions/demo/wegmans_full_page_flex/images/social-icons-sprite.png') no-repeat top left;
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    text-indent: 105%;
+    white-space: nowrap;
+    width: 20px;
+}
+
+.social-compontent-button-facebook {
+    background-position: top left;
+}
+
+.social-compontent-button-instagram {
+    background-position: -20px 0;
+}
+
+.social-compontent-button-youtube {
+    background-position: -40px 0;
+}
+
+.social-compontent-button-twitter {
+    background-position: -60px 0;
+    width: 22px;
+}
+
+.social-compontent-text {
+    color: rgb(255,255,255);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Instagram */
+
+.instagram-compontent .instagram-photos {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.instagram-compontent .instagram-photos .instagram-post {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 156px;
+}
+
+.instagram-compontent .instagram-photos .instagram-post:last-of-type {
+    margin: 0;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-photo {
+    border: 3px solid rgb(255,255,255);
+    border-radius: 3px;
+    height: 150px;
+    width: 150px;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-text {
+    font-size: 10px;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 145px;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-meta {
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-meta .instagram-post-like {
+    display: inline-block;
+    padding-left: 17px;
+    position: relative;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-meta .instagram-post-like:before {
+    background: transparent url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/images/instagram-icons-sprite.png') no-repeat top left;
+    content: '';
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-meta .instagram-post-comments {
+    display: inline-block;
+    padding-left: 17px;
+    position: relative;
+}
+
+.instagram-compontent .instagram-photos .instagram-post .instagram-post-meta .instagram-post-comments:before {
+    background: transparent url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/images/instagram-icons-sprite.png') no-repeat top right;
+    content: '';
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+/* Creative */
+
+.dinobbq-fpf {
+    color: rgb(255,255,255);
+    font-family: 'GothomHTF';
+    text-transform: uppercase;
+}
+
+.dinobbq-fpf a {
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.dinobbq-fpf .inner-container .bbq-right {
+    background-color: rgba(7,7,7,0.2);
+    height: 768px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 362px;
+}
+
+.dinobbq-fpf .inner-container .bbq-right h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.dinobbq-fpf .inner-container .bbq-right .instagram-head:after {
+    content: url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/images/instagram-head.png');
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+.dinobbq-fpf .inner-container .location-compontent-link {
+    text-align: right;
+    text-transform: none;
+}
+
+.dinobbq-fpf .inner-container .bbq-right .facebook-head:after {
+    content: url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/images/facebook-head.png');
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+.dinobbq-fpf .inner-container .bbq-right .bbq-line {
+    background-color: rgb(255,255,255);
+    height: 3px;
+    margin: 20px 0;
+}
+
+.dinobbq-fpf .inner-container .location-compontent {
+    position: relative;
+}
+
+.dinobbq-fpf .inner-container .contact-compontent {
+    bottom: 60px;
+    left: 20px;
+    position: absolute;
+}
+
+.dinobbq-fpf .inner-container .social-compontent {
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+}
+
+.dinobbq-fpf .outer-container {
+    background: rgb(7,7,7) url('http://i.usatoday.net/adsolutions/demo/dinosaur_bbq_full_page_flex/images/dinosaur-bbq-background.jpg') no-repeat center center;
+}
+
+.size-320 .dinobbq-fpf .outer-container {
+    background-size: 480px;
+}
+
+.size-480 .dinobbq-fpf .outer-container {
+    background-size: 800px;
+}
+
+.size-600 .dinobbq-fpf .outer-container {
+    background-size: 1024px;
+}
