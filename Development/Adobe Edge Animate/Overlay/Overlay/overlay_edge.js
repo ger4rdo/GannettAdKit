@@ -94,8 +94,8 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'rect',
       rect: ['0px','0px','600px','450px','auto','auto'],
+      type: 'rect',
       overflow: 'hidden',
       id: 'Small_Rectangle',
       stroke: [0,'rgba(0,0,0,1)','none'],
@@ -107,16 +107,16 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${symbolSelector}": [
-            ["style", "height", '450px'],
-            ["style", "width", '600px']
-         ],
          "${_Small_Rectangle}": [
             ["style", "top", '0px'],
             ["style", "overflow", 'hidden'],
             ["style", "height", '450px'],
             ["style", "display", 'none'],
             ["style", "left", '0px'],
+            ["style", "width", '600px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '450px'],
             ["style", "width", '600px']
          ]
       }
@@ -143,8 +143,8 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'rect',
       rect: ['0px','0px','768px','576px','auto','auto'],
+      type: 'rect',
       id: 'Medium_Rectangle',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
@@ -157,8 +157,8 @@ var symbols = {
       "Base State": {
          "${_Medium_Rectangle}": [
             ["style", "top", '0px'],
-            ["style", "display", 'none'],
             ["style", "height", '576px'],
+            ["style", "display", 'none'],
             ["style", "left", '0px'],
             ["style", "width", '768px']
          ],
@@ -190,8 +190,8 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'rect',
       rect: ['0px','0px','936px','700px','auto','auto'],
+      type: 'rect',
       id: 'Large_Rectangle',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
@@ -202,15 +202,15 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${symbolSelector}": [
-            ["style", "height", '700px'],
-            ["style", "width", '936px']
-         ],
          "${_Large_Rectangle}": [
             ["style", "top", '0px'],
-            ["style", "display", 'none'],
             ["style", "height", '700px'],
+            ["style", "display", 'none'],
             ["style", "left", '0px'],
+            ["style", "width", '936px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '700px'],
             ["style", "width", '936px']
          ]
       }
@@ -237,8 +237,8 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'rect',
       rect: ['0px','0px','1080px','810px','auto','auto'],
+      type: 'rect',
       id: 'XLarge_Rectangle_Symbol',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
@@ -249,15 +249,15 @@ var symbols = {
    },
    states: {
       "Base State": {
-         "${symbolSelector}": [
-            ["style", "height", '810px'],
-            ["style", "width", '1080px']
-         ],
          "${_XLarge_Rectangle_Symbol}": [
             ["style", "top", '0px'],
-            ["style", "display", 'none'],
             ["style", "height", '810px'],
+            ["style", "display", 'none'],
             ["style", "left", '0px'],
+            ["style", "width", '1080px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '810px'],
             ["style", "width", '1080px']
          ]
       }

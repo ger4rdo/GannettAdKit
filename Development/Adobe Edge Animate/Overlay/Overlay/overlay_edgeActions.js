@@ -34,7 +34,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 			});
 			
 			function changeSize(w, h) {
-				console.log('changeSize(' + w + ',' + h + ');');
 				sym.$("Small_Stage").hide();
 				sym.$("Medium_Stage").hide();
 				sym.$("Large_Stage").hide();
@@ -51,10 +50,15 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 				}
 			}
 			
+			function complete() {
+			
+			}
+			
 			yepnope({
-				nope: [
-					'http://i.usatoday.net/adsolutions/_common/event-model/event-model.js'
-				]
+				load: [
+					'http://i.usatoday.net/adsolutions/templates/edge/event-model.js'
+				],
+				complete: complete
 			});
       });
       //Edge binding end
