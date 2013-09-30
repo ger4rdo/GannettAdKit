@@ -13,6 +13,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+      	
+      	var currentStage = 'None';
+      	var playing = false;
+      
          $(document).on('setup', function(event) {
 				changeSize(event.message.width, event.message.height);
 				window.eventReady();
@@ -20,10 +24,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 			
 			$(document).on('play', function() {
 				sym.play();
+				playing = true;
 			});
 			
 			$(document).on('stop', function() {
 				sym.stop();
+				playing = false;
 			});
 			
 			$(document).on('resize', function(event) {
@@ -34,20 +40,60 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 			});
 			
 			function changeSize(w, h) {
-				sym.$("Small_Stage").hide();
-				sym.$("Medium_Stage").hide();
-				sym.$("Large_Stage").hide();
-				sym.$("XLarge_Stage").hide();
-				
 				if (w === 1080) {
+					if ('XLarge_Stage' === currentStage) {
+						return;
+					}
+					sym.getSymbol(currentStage).stop();
+					sym.$("Small_Stage").hide();
+					sym.$("Medium_Stage").hide();
+					sym.$("Large_Stage").hide();
 					sym.$("XLarge_Stage").show();
+					if (playing) {
+						sym.getSymbol('XLarge_Stage').play();
+					}
+					currentStage = 'XLarge_Stage';
 				} else if (w === 936) {
+					if ('Large_Stage' === currentStage) {
+						return;
+					}
+					sym.getSymbol(currentStage).stop();
+					sym.$("Small_Stage").hide();
+					sym.$("Medium_Stage").hide();
 					sym.$("Large_Stage").show();
+					sym.$("XLarge_Stage").hide();
+					if (playing) {
+						sym.getSymbol('Large_Stage').play();
+					}
+					currentStage = 'Large_Stage';
 				} else if (w === 768) {
+					if ('Medium_Stage' === currentStage) {
+						return;
+					}
+					sym.getSymbol(currentStage).stop();
+					sym.$("Small_Stage").hide();
 					sym.$("Medium_Stage").show();
+					sym.$("Large_Stage").hide();
+					sym.$("XLarge_Stage").hide();
+					if (playing) {
+						sym.getSymbol('Medium_Stage').play();
+					}
+					currentStage = 'Medium_Stage';
 				} else {
+					if ('Small_Stage' === currentStage) {
+						return;
+					}
+					sym.getSymbol(currentStage).stop();
 					sym.$("Small_Stage").show();
+					sym.$("Medium_Stage").hide();
+					sym.$("Large_Stage").hide();
+					sym.$("XLarge_Stage").hide();
+					if (playing) {
+						sym.getSymbol('Small_Stage').play();
+					}
+					currentStage = 'Small_Stage';
 				}
+				
 			}
 			
 			function complete() {
