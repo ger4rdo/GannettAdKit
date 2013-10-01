@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'overlay',
-   		'version': 0.3
+   		'number': 0.4
    	}
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
@@ -51,7 +51,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 					if ('XLarge_Stage' === currentStage) {
 						return;
 					}
-					sym.getSymbol(currentStage).stop();
+					if (sym.getSymbol(currentStage)) {
+						sym.getSymbol(currentStage).stop();
+					}
 					sym.$("Small_Stage").hide();
 					sym.$("Medium_Stage").hide();
 					sym.$("Large_Stage").hide();
@@ -64,7 +66,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 					if ('Large_Stage' === currentStage) {
 						return;
 					}
-					sym.getSymbol(currentStage).stop();
+					if (sym.getSymbol(currentStage)) {
+						sym.getSymbol(currentStage).stop();
+					}
 					sym.$("Small_Stage").hide();
 					sym.$("Medium_Stage").hide();
 					sym.$("Large_Stage").show();
@@ -77,7 +81,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 					if ('Medium_Stage' === currentStage) {
 						return;
 					}
-					sym.getSymbol(currentStage).stop();
+					if (sym.getSymbol(currentStage)) {
+						sym.getSymbol(currentStage).stop();
+					}
 					sym.$("Small_Stage").hide();
 					sym.$("Medium_Stage").show();
 					sym.$("Large_Stage").hide();
@@ -90,7 +96,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 					if ('Small_Stage' === currentStage) {
 						return;
 					}
-					sym.getSymbol(currentStage).stop();
+					if (sym.getSymbol(currentStage)) {
+						sym.getSymbol(currentStage).stop();
+					}
 					sym.$("Small_Stage").show();
 					sym.$("Medium_Stage").hide();
 					sym.$("Large_Stage").hide();
