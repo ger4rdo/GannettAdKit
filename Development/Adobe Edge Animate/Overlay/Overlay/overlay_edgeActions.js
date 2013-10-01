@@ -11,6 +11,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    //Edge symbol: 'stage'
    (function(symbolName) {
+   
+   	window.version = {
+   		'templateType': 'overlay',
+   		'version': 0.3
+   	}
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
       	
@@ -25,11 +30,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 			$(document).on('play', function() {
 				sym.play();
 				playing = true;
+				sym.getSymbol(currentStage).play();
 			});
 			
 			$(document).on('stop', function() {
 				sym.stop();
 				playing = false;
+				sym.getSymbol(currentStage).stop();
 			});
 			
 			$(document).on('resize', function(event) {
