@@ -14,27 +14,28 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'overlay',
-   		'number': 0.4
+   		'number': 0.5
    	}
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
+      	
+      	sym.$('Stage').css('display','none');
       	
       	var currentStage = 'None';
       	var playing = false;
       
          $(document).on('setup', function(event) {
 				changeSize(event.message.width, event.message.height);
+				sym.$('Stage').css('display','block');
 				window.eventReady();
 			});
 			
 			$(document).on('play', function() {
-				sym.play();
 				playing = true;
 				sym.getSymbol(currentStage).play();
 			});
 			
 			$(document).on('stop', function() {
-				sym.stop();
 				playing = false;
 				sym.getSymbol(currentStage).stop();
 			});
