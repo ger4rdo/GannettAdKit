@@ -21,6 +21,10 @@
             <!-- End creative content -->
         </div>
         <script type="text/javascript">
+
+            var docUrl = document.URL,
+                creativeScript = docUrl.substring(0, docUrl.lastIndexOf('/')) + '/scripts/creative-script.js';
+
             var dfpTemplateData = {
                 adType: 'Full Page Flex',
                 dfp : {
@@ -39,7 +43,7 @@
                 clickUrl : 'https://www.google.com/?q=',
                 eventTracking: [],
                 impressionTracking: [],
-                script: 'scripts/creative-script.js',
+                script: creativeScript,
                 vCEUrl : '',
                 version: 3,
                 videos: [],
