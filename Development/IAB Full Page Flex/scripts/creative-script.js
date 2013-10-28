@@ -26,8 +26,8 @@ define(
              * render() is called.
              */
             initialize: function(options) {
-                this.render();
                 FullPageFlexView.prototype.initialize.call(this, options);
+                this.render();
             },
 
             /**
