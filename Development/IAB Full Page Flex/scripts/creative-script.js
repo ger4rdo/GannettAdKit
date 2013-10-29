@@ -2,7 +2,7 @@ define(
     [
         'jquery',
         'underscore',
-        'fullpageflexview'
+        'http://i.usatoday.net/adsolutions/_common/views/full-page-flex-view.js'
     ],
     function(
         $,
