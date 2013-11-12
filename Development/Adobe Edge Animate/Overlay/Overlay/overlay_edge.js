@@ -21,43 +21,9 @@ var symbols = {
    resizeInstances: false,
    content: {
          dom: [
-         {
-            id:'Small_Stage',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         },
-         {
-            id:'Medium_Stage',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         },
-         {
-            id:'Large_Stage',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         },
-         {
-            id:'XLarge_Stage',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         }],
+],
          symbolInstances: [
-         {
-            id:'Small_Stage',
-            symbolName:'Small_Symbol'
-         },
-         {
-            id:'Medium_Stage',
-            symbolName:'Medium_Symbol'
-         },
-         {
-            id:'Large_Stage',
-            symbolName:'Large_Symbol'
-         },
-         {
-            id:'XLarge_Stage',
-            symbolName:'XLarge_Symbol'
-         }
+
          ]
       },
    states: {
@@ -97,6 +63,8 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '450px'],
+            ["style", "max-width", '600px'],
+            ["style", "min-width", '600px'],
             ["style", "width", '600px']
          ]
       }
@@ -126,6 +94,8 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '576px'],
+            ["style", "max-width", '768px'],
+            ["style", "min-width", '768px'],
             ["style", "width", '768px']
          ]
       }
@@ -154,7 +124,10 @@ var symbols = {
    states: {
       "Base State": {
          "${symbolSelector}": [
+            ["style", "min-width", '936px'],
+            ["style", "max-width", '936px'],
             ["style", "height", '700px'],
+            ["style", "overflow", 'hidden'],
             ["style", "width", '936px']
          ]
       }
@@ -184,6 +157,8 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '810px'],
+            ["style", "max-width", '1080px'],
+            ["style", "min-width", '1080px'],
             ["style", "width", '1080px']
          ]
       }
