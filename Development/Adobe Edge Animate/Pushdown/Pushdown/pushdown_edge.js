@@ -21,37 +21,9 @@ var symbols = {
    resizeInstances: false,
    content: {
          dom: [
-         {
-            id:'Small_Stage',
-            display:'none',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         },
-         {
-            id:'Medium_Stage',
-            display:'none',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         },
-         {
-            id:'Large_Stage',
-            display:'none',
-            type:'rect',
-            rect:['0','0','auto','auto','auto','auto']
-         }],
+],
          symbolInstances: [
-         {
-            id:'Small_Stage',
-            symbolName:'Small_Symbol'
-         },
-         {
-            id:'Medium_Stage',
-            symbolName:'Medium_Symbol'
-         },
-         {
-            id:'Large_Stage',
-            symbolName:'Large_Symbol'
-         }
+
          ]
       },
    states: {
@@ -63,20 +35,6 @@ var symbols = {
             ["style", "height", '665px'],
             ["style", "max-width", 'none'],
             ["style", "width", '100%']
-         ],
-         "${_Medium_Stage}": [
-            ["style", "top", '50px'],
-            ["style", "left", '0px'],
-            ["style", "display", 'none']
-         ],
-         "${_Large_Stage}": [
-            ["style", "top", '50px'],
-            ["style", "left", '0px'],
-            ["style", "display", 'none']
-         ],
-         "${_Small_Stage}": [
-            ["style", "top", '50px'],
-            ["style", "display", 'none']
          ]
       }
    },
@@ -87,14 +45,7 @@ var symbols = {
          duration: 0,
          autoPlay: false,
          timeline: [
-            { id: "eid17", tween: [ "style", "${_Medium_Stage}", "left", '0px', { fromValue: '0px'}], position: 0, duration: 0 },
-            { id: "eid12", tween: [ "style", "${_Medium_Stage}", "top", '50px', { fromValue: '50px'}], position: 0, duration: 0 },
-            { id: "eid18", tween: [ "style", "${_Small_Stage}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid10", tween: [ "style", "${_Small_Stage}", "top", '50px', { fromValue: '50px'}], position: 0, duration: 0 },
-            { id: "eid19", tween: [ "style", "${_Large_Stage}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid20", tween: [ "style", "${_Medium_Stage}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-            { id: "eid13", tween: [ "style", "${_Large_Stage}", "top", '50px', { fromValue: '50px'}], position: 0, duration: 0 },
-            { id: "eid16", tween: [ "style", "${_Large_Stage}", "left", '0px', { fromValue: '0px'}], position: 0, duration: 0 }         ]
+         ]
       }
    }
 },
@@ -112,6 +63,8 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '615px'],
+            ["style", "max-width", '840px'],
+            ["style", "min-width", '840px'],
             ["style", "width", '840px']
          ]
       }
@@ -141,6 +94,8 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '615px'],
+            ["style", "max-width", '1080px'],
+            ["style", "min-width", '1080px'],
             ["style", "width", '1080px']
          ]
       }
@@ -170,6 +125,8 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '615px'],
+            ["style", "max-width", '1180px'],
+            ["style", "min-width", '1180px'],
             ["style", "width", '1180px']
          ]
       }
