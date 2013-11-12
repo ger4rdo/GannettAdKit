@@ -63,9 +63,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '615px'],
-            ["style", "max-width", '840px'],
+            ["style", "width", '840px'],
             ["style", "min-width", '840px'],
-            ["style", "width", '840px']
+            ["style", "max-width", '840px']
          ]
       }
    },
@@ -94,9 +94,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '615px'],
-            ["style", "max-width", '1080px'],
+            ["style", "width", '1080px'],
             ["style", "min-width", '1080px'],
-            ["style", "width", '1080px']
+            ["style", "max-width", '1080px']
          ]
       }
    },
@@ -125,9 +125,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '615px'],
-            ["style", "max-width", '1180px'],
+            ["style", "width", '1180px'],
             ["style", "min-width", '1180px'],
-            ["style", "width", '1180px']
+            ["style", "max-width", '1180px']
          ]
       }
    },
