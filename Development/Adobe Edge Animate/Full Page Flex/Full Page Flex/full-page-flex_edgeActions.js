@@ -8,7 +8,7 @@
 ***********************/
 window.version = {
 	'templateType': 'full-page-flex',
-	'number': 0.1
+	'number': 0.2
 };
 (function($, Edge, compId){
 	var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonly used Edge classes
@@ -53,19 +53,19 @@ window.version = {
 				// create new symbol
 				var newSymbol = '_240x240',
 					 size = 240;
-				if (w > 768 && h > 768) {
+				if (w >= 768 && h >= 768) {
 					newSymbol = '_768x768';
 					size = 768;
-				} else if (w > 600 && h > 600) {
+				} else if (w >= 600 && h >= 600) {
 					newSymbol = '_600x600';
 					size = 600;
-				} else if (w > 480 && h > 480) {
+				} else if (w >= 480 && h >= 480) {
 					newSymbol = '_480x480';
 					size = 480;
-				} else if (w > 405 && h > 405) {
+				} else if (w >= 405 && h >= 405) {
 					newSymbol = '_405x405';
 					size = 405;
-				} else if (w > 320 && h > 320) {
+				} else if (w >= 320 && h >= 320) {
 					newSymbol = '_320x320';
 					size = 320;
 				}
