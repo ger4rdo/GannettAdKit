@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'pushdown',
-   		'number': 0.2
+   		'number': 0.3
    	};
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
@@ -57,9 +57,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 				}
 				// create new symbol
 				var newSymbol = 'Small_Symbol';
-				if (w > 1180) {
+				if (w >= 1180) {
 					newSymbol = 'Large_Symbol';
-				} else if (w > 1080) {
+				} else if (w >= 1080) {
 					newSymbol = 'Medium_Symbol';
 				}
 				var symObj = sym.createChildSymbol(newSymbol, "stage");
