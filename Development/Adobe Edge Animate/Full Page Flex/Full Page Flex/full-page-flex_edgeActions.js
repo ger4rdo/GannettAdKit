@@ -8,7 +8,7 @@
 ***********************/
 window.version = {
 	'templateType': 'full-page-flex',
-	'number': 0.2
+	'number': 0.3
 };
 (function($, Edge, compId){
 	var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonly used Edge classes
