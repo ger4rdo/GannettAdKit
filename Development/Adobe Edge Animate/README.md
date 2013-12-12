@@ -2,9 +2,9 @@ Adobe Edge Animate
 ==================
 
 Latest Version Numbers to look for:
-* Pushdown: 0.3
-* Full Page Flex: 0.3 (2013-11-26)
-* Overlay (Elastic): 0.6
+* Pushdown: 0.4 (2013-12-12)
+* Full Page Flex: 0.4  (2013-12-12)
+* Overlay (Elastic): 0.7 (2013-12-12)
 
 
 Import templates

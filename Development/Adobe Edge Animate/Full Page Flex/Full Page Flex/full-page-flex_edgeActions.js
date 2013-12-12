@@ -8,7 +8,7 @@
 ***********************/
 window.version = {
 	'templateType': 'full-page-flex',
-	'number': 0.3
+	'number': 0.4
 };
 (function($, Edge, compId){
 	var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonly used Edge classes
@@ -23,7 +23,8 @@ window.version = {
 				change(event.message.width, event.message.height);
 				window.eventReady();
 			});
-			$(document).on('play', function() {
+			$(document).on('play', function(event) {
+				change(event.message.width, event.message.height);
 				playing = true;
 				sym.play();
 				if (currentSymbol) {

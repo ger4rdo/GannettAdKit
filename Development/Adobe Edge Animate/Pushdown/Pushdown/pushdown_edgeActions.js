@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'pushdown',
-   		'number': 0.3
+   		'number': 0.4
    	};
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
@@ -26,7 +26,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 				window.eventReady();
 			});
 			
-			$(document).on('play', function() {
+			$(document).on('play', function(event) {
+				change(event.message.width, event.message.height);
 				playing = true;
 				sym.play();
 				if (currentSymbol) {
