@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'pushdown',
-   		'number': 0.4
+   		'number': 0.5
    	};
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
@@ -71,6 +71,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 					'margin': '50px auto 0 auto'
 				});
 			}
+			
+			// ENTER VIDEO CONFIG HERE
 			
 			function complete() {
 			

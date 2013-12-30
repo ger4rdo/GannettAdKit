@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'overlay',
-   		'number': 0.7
+   		'number': 0.8
    	};
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
@@ -68,6 +68,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 				var symObj = sym.createChildSymbol(newSymbol, "stage");
 				currentSymbol = symObj;
 			}
+			
+			// ENTER VIDEO CONFIG HERE
 			
 			function complete() {
 			
