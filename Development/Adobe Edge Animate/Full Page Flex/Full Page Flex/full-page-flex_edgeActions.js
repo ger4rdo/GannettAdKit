@@ -8,7 +8,7 @@
 ***********************/
 window.version = {
 	'templateType': 'full-page-flex',
-	'number': 0.4
+	'number': 0.5
 };
 (function($, Edge, compId){
 	var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonly used Edge classes
@@ -79,6 +79,8 @@ window.version = {
 					'margin': mt + 'px auto 0 auto'
 				});
 			}
+			
+			// ENTER VIDEO CONFIG HERE
 			
 			function complete() {
 				

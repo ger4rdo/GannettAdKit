@@ -63,9 +63,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '240px'],
-            ["style", "max-width", '240px'],
+            ["style", "width", '240px'],
             ["style", "min-width", '240px'],
-            ["style", "width", '240px']
+            ["style", "max-width", '240px']
          ]
       }
    },
@@ -94,9 +94,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '320px'],
-            ["style", "max-width", '320px'],
+            ["style", "width", '320px'],
             ["style", "min-width", '320px'],
-            ["style", "width", '320px']
+            ["style", "max-width", '320px']
          ]
       }
    },
@@ -125,8 +125,6 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '405px'],
-            ["style", "max-width", '405px'],
-            ["style", "min-width", '405px'],
             ["style", "width", '405px']
          ]
       }
@@ -156,9 +154,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '480px'],
-            ["style", "max-width", '480px'],
+            ["style", "width", '480px'],
             ["style", "min-width", '480px'],
-            ["style", "width", '480px']
+            ["style", "max-width", '480px']
          ]
       }
    },
@@ -187,9 +185,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '600px'],
-            ["style", "max-width", '600px'],
+            ["style", "width", '600px'],
             ["style", "min-width", '600px'],
-            ["style", "width", '600px']
+            ["style", "max-width", '600px']
          ]
       }
    },
@@ -218,9 +216,9 @@ var symbols = {
       "Base State": {
          "${symbolSelector}": [
             ["style", "height", '768px'],
-            ["style", "max-width", '768px'],
+            ["style", "width", '768px'],
             ["style", "min-width", '768px'],
-            ["style", "width", '768px']
+            ["style", "max-width", '768px']
          ]
       }
    },
