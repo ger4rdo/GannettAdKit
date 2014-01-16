@@ -26,6 +26,18 @@ define(
              * render() is called.
              */
             initialize: function(options) {
+                this.config = $.extend({}, options || {
+                    dfp : {
+                        eaid: '',
+                        ecid: '',
+                        eenv: '',
+                        esid: '',
+                        epid: '',
+                        eadv: '',
+                        ebuy: '',
+                        geo: ''
+                    }
+                });
                 FullPageFlexView.prototype.initialize.call(this, options);
                 this.render();
             },
