@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    	window.version = {
    		'templateType': 'pushdown',
-   		'number': 0.5
+   		'number': 0.6
    	};
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
@@ -67,9 +67,17 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 				currentSymbol = symObj;
 
 				// center
-				symObj.getSymbolElement().css({
-					'margin': '50px auto 0 auto'
-				});
+                if (newSymbol == 'Small_Symbol' && /(iPad|iPhone|iPod)/g.test( navigator.userAgent )) {
+                    symObj.getSymbolElement().css({
+                        'margin': '50px auto 0 auto',
+                        'overflow': 'hidden'
+                    });
+                } else {
+                    symObj.getSymbolElement().css({
+                        'margin': '50px auto 0 auto'
+                    });
+                }
+
 			}
 			
 			// ENTER VIDEO CONFIG HERE

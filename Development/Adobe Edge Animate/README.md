@@ -2,7 +2,7 @@ Adobe Edge Animate
 ==================
 
 Latest Version Numbers to look for:
-* Pushdown: 0.5 (2013-12-30)
+* Pushdown: 0.6 (2014-02-27)
 * Full Page Flex: 0.5  (2013-12-30)
 * Overlay (Elastic): 0.8 (2013-12-30)
 
