@@ -1,0 +1,41 @@
+.unique-class-name,
+.unique-class-name * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.unique-class-name {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Inner */
+
+.unique-class-name .inner-container {
+    height: 768px;
+    left: 50%;
+    margin-left: -384px;
+    margin-top: -384px;
+    position: absolute;
+    top: 50%;
+    width: 768px;
+    z-index: 0;
+}
+
+/* Outer */
+
+.unique-class-name .outer-container {
+    height: 1320px;
+    left: 50%;
+    margin-left: -660px;
+    margin-top: -660px;
+    position: absolute;
+    top: 50%;
+    width: 1320px;
+    z-index: -1;
+}

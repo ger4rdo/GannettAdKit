@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gannett Digital - Full Page Flex</title>
+        <link rel="stylesheet" type="text/css" href="http://www.gannett-cdn.com/ads/scripts/gannett-ad-kit/controls.css"/>
+        <link rel="stylesheet" type="text/css" href="http://www.gannett-cdn.com/ads/scripts/gannett-ad-kit/full-page-flex-style.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/creative-style.css"/>
+        <script src="http://www.gannett-cdn.com/static/js/libs/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <div class="partner-placement">
+            <!-- Begin creative content -->
+            <div class="unique-class-name">
+                <div class="inner-container">
+                    
+                </div>
+                <div class="outer-container">
+                    
+                </div>
+            </div>
+            <!-- End creative content -->
+        </div>
+        <div class="controls">
+            <a href="#" class="partner-close"></a>
+            <button type="button" class="event-button" data-action="play">Play</button>
+            <button type="button" class="event-button" data-action="stop">Stop</button>
+            <button type="button" class="event-button" data-action="destroy">Destroy</button>
+        </div>
+        <script type="text/javascript">
+
+            var docUrl = document.URL,
+                creativeScript = docUrl.substring(0, docUrl.lastIndexOf('/')) + '/scripts/creative-script.js';
+
+            var dfpTemplateData = {
+                adType: 'Full Page Flex',
+                dfp : {
+                    eaid : '%eaid!',
+                    ecid : '%ecid!',
+                    eenv : '%eenv!',
+                    esid : '%esid!',
+                    epid : '%epid!',
+                    eadv : '%eadv!',
+                    ebuy : '%ebuy!',
+                    geo : ''
+                },
+                extraData : {},
+                cacheBuster : Math.floor(Math.random() * 1000000000),
+                clickTracking: [],
+                clickUrl : 'https://www.google.com/?q=',
+                eventTracking: [],
+                impressionTracking: [],
+                script: creativeScript,
+                vCEUrl : '',
+                version: 3,
+                videos: [],
+                viewUrl : null
+            };
+
+            /*  Extra Data
+                Use it to setup dynamic values to be placed in DFP.
+                Key/Values
+            */
+
+            /*  Click Tracking syntax
+                Use it to setup dynamic click urls to be placed in DFP.
+                {
+                    'key': 'default',
+                    'url': 'default url for all a tags with a target of _blank'
+                },
+                {
+                    'key': '.selector',
+                    'url': 'url for a single tag with a target of _blank'
+                }
+            */
+
+            /* Click Tracking syntax
+                Use it to setup event tracking, entered into DFP.
+                {
+                    'eventType': 'click',
+                    'selector': '.selector',
+                    'trackingImageUrl': 'tracking pixel url'
+                }
+            */
+        </script>
+        <script data-main="http://www.gannett-cdn.com/ads/scripts/gannett-ad-kit/local-script.js" src="http://www.gannett-cdn.com/static/js/libs/require/require.js"></script>
+    </body>
+</html>
