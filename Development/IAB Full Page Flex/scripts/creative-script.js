@@ -2,7 +2,7 @@ define(
     [
         'jquery',
         'underscore',
-        'http://i.usatoday.net/adsolutions/_common/views/full-page-flex-view.js'
+        'http://www.gannett-cdn.com/ads/scripts/views/full-page-flex-view.js'
     ],
     function(
         $,
@@ -49,6 +49,7 @@ define(
              * becomes visible.
              */
             play: function() {
+                FullPageFlexView.prototype.play.call(this);
             },
 
             /**
@@ -56,6 +57,7 @@ define(
              * to generate the ad.
              */
             render: function() {
+                //this.triggerReady();
             },
 
             /**
@@ -73,6 +75,7 @@ define(
              * All timers and animtion needs to be stopped.
              */
             stop: function() {
+                FullPageFlexView.prototype.stop.call(this);
             }
 
         });

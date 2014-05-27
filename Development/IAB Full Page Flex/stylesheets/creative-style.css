@@ -1,4 +1,3 @@
-
 .unique-class-name,
 .unique-class-name * {
     -moz-box-sizing: border-box;
@@ -15,14 +14,16 @@
     top: 0;
 }
 
-
-
 /* Inner */
 
 .unique-class-name .inner-container {
+    height: 768px;
+    margin-right: -384px;
+    margin-top: -384px;
     position: absolute;
     right: 50%;
     top: 50%;
+    width: 768px;
     z-index: 0;
 }
 
@@ -53,14 +54,6 @@
     margin-right: -300px;
     margin-top: -300px;
 }
-
-.size-768 .unique-class-name .inner-container {
-    height: 768px;
-    width: 768px;
-    margin-right: -384px;
-    margin-top: -384px;
-}
-
 
 /* Outer */
 
