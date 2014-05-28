@@ -14,7 +14,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
 		window.version = {
 			'templateType': 'full-page-flex',
-			'number': '3.0-1'
+			'number': '3.0-2'
 		};
 
       Symbol.bindElementAction(compId, symbolName, "document", "compositionReady", function(sym, e) {
