@@ -1,0 +1,44 @@
+
+{
+
+	"HTMLFileName":"pushdown-3.0-1.html",
+	"symbol_stage":{
+		"element_${_Pushdown_16x9}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"false",
+			"timelineColor":"0x91c767"},
+		"dummyStageParentWidth":"2560px",
+		"defaultStageParentHeight":"1008px",
+		"dummyStageParentHeight":"1008px",
+		"defaultStageParentWidth":"2560px",
+		"hGuides":"78px,771px,821px",
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"vGuides":"1940px,620px"},
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"viewStartY":"0",
+	"LockGuides":"true",
+	"CompZoomFactor":"100",
+	"usedBOM":"false",
+	"nextElementColorIndex":"3",
+	"stage-Default Timeline_playhead_ms":"0",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"pref__general__codeView":"fullView",
+	"StageZoomFactor":"100"}
