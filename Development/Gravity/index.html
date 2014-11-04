@@ -1,0 +1,89 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie11 lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie11 lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js lt-ie11" lang="en"> <![endif]-->
+<!--[if gt IE 10]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Pushdown</title>
+        <link rel="stylesheet" href="http://www.gannett-cdn.com/static/css/bundles/main_modern.min.css"/>
+        <link rel="stylesheet" href="page.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="shortcut icon" href="http://www.gannett-cdn.com/static/images/favicon.png"/>
+        <script src="http://www.gannett-cdn.com/static/js/libs/modernizr/modernizr.js"></script>
+        <!--[if lt IE 9]>
+            <script src="http://www.gannett-cdn.com/static/js/libs/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="controls">
+            <button type="button" class="action-button" data-action="play">Play</button>
+            <button type="button" class="action-button" data-action="pause">Pause</button>
+            <button type="button" class="action-button" data-action="resume">Resume</button>
+            <button type="button" class="action-button" data-action="stop">Stop</button>
+        </div>
+
+        <div class="partner-placement partner-gravity-ad">
+            <a class="partner-scroll"></a>
+
+<!-- BEGIN PUSHDOWN HTML -->
+
+<section class="gravity-custom-class">
+    <div class="content-area">
+        <!-- CONTENT
+             Default layout is middle left
+             Additional classes :
+             right : content will be middle right
+             bottom : content will be bottom (default is left)
+             bottom right: content will be bottom right
+        -->
+        <div class="copy-block"></div>
+        <!-- LOGO 
+             Default layout is bottom left
+             Additional classes : 
+             right : logo will be bottom right
+        -->
+        <a href="#" target="_blank" class="logo right">
+            <img src="images/logo.png" />
+        </a>
+        <!-- VOLUME -->
+        <div class="volume-control muted">
+            <div class="volume-bar"></div>
+            <div class="volume-mute"></div>
+        </div>
+    </div>
+    <div class="video-cover"></div>
+    <div class="video"></div>
+    <img src="images/background.png" class="background" />
+</section>
+<!-- END PUSHDONW HTML -->
+
+        </div>
+
+        <script type="text/javascript">
+            //link to local script, all automated now. Unless you change the name of the script file.
+            var uri = document.baseURI;
+            var path = uri.substring(0, uri.lastIndexOf('/'));
+            var adScript = path + '/script.js';
+
+            /*
+                DFP Template Object to test out your settings
+            */
+            var dfpObject = {
+                extraData : {},
+                eventTracking: [],
+                clickTracking: [
+                    {'key':'default','url':''}
+                ],
+                videos: [
+                    { videoId : 'z3eN9u5N2Q4' }
+                ]
+            };
+        </script>
+        <script src="http://www.gannett-cdn.com/ads/scripts/require.2.1.2.js" data-main="http://www.gannett-cdn.com/ads/scripts/blackmagic/blackmagic-gravity.js"></script>
+    </body>
+</html>
