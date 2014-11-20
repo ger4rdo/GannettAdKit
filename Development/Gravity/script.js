@@ -55,27 +55,6 @@ function(
                             onTrigger : this.seekVideo
                         }
                     });
-
-                    this.$volumeBar.slider({
-                        change: _.bind(function( event, ui ) {
-                            var vol = ui.value;
-                            this.userSetVolume = vol;
-                            this.setVolume(vol);
-                        }, this),
-                        max: 100,
-                        min: 0,
-                        orientation: "vertical",
-                        slide: _.bind(function( event, ui ) {
-                            var vol = ui.value;
-                            this.userSetVolume = vol;
-                            this.setVolume(vol);
-                        }, this),
-                        range: "min",
-                        value: this.userSetVolume
-                    });
-
-                    var throttleScroll = _.throttle(this.onScrollWindow, 50);
-                    $(window).on('scroll.' + this.config.dfp.ecid, throttleScroll);
                 }
 
                 BaseAdView.prototype.initialize.call(this, config);
@@ -158,6 +137,27 @@ function(
                     this.started = true;
                     this.seekVideo();
                     if(!this.$background.hasClass('hidden')) {
+                        this.$volumeBar.slider({
+                            change: _.bind(function( event, ui ) {
+                                var vol = ui.value;
+                                this.userSetVolume = vol;
+                                this.setVolume(vol);
+                            }, this),
+                            max: 100,
+                            min: 0,
+                            orientation: "vertical",
+                            slide: _.bind(function( event, ui ) {
+                                var vol = ui.value;
+                                this.userSetVolume = vol;
+                                this.setVolume(vol);
+                            }, this),
+                            range: "min",
+                            value: this.userSetVolume
+                        });
+
+                        var throttleScroll = _.throttle(this.onScrollWindow, 50);
+                        $(window).on('scroll.' + this.config.dfp.ecid, throttleScroll);
+
                         this.$volume.show();
                         // this.$replay.show();
                         this.$background.fadeOut(500, function() {
