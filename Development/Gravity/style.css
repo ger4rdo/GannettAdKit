@@ -61,6 +61,7 @@
 }
 
 .gravity-custom-class .video-cover {
+    background: url('about:blank');
     height: 100%;
     left: 0;
     position: absolute;
