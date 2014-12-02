@@ -34,7 +34,7 @@ function(
 
             initialize: function(config) {
                 this.config = $.extend({}, config || {});
-                _.bindAll(this, 'setVolume', 'startVideo', 'seekVideo');
+                _.bindAll(this, 'setVolume', 'startVideo', 'seekVideo', 'onScrollWindow');
 
                 this.$background = this.$('.background');
                 this.$copy = this.$('.copy-block');
@@ -69,7 +69,6 @@ function(
                     newHeight = newWidth * (originalImageHeight/originalImageWidth),
                     topOffset = (containerHeight-newHeight)/2,
                     leftOffset = (containerWidth-newWidth)/2;
-
 
                 return {height : newHeight, left: leftOffset, top: topOffset, width: newWidth};
             },
