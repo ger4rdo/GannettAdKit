@@ -46,7 +46,7 @@ function(
                 //if we are not running a static image, setup video/audio
                 if(!this.staticFallback) {
                     this.$video.adVideo({
-                        autoplay: 1,
+                        autoplay: 0,
                         usatcontrols: 0,
                         video : this.options.videos[0],
                         events : {
@@ -84,7 +84,7 @@ function(
                 BaseAdView.prototype.play.call(this);
                 AdManager.logDebug('PartnerView.play(partner:' + this.config.dfp.ecid + ':play)');
                 this.resize(this.config.initialWidth, this.config.initialHeight);
-
+                this.$video.adVideo('play');
             },
             resize: function(width, height) {
                 BaseAdView.prototype.resize.call(this, width, height);
