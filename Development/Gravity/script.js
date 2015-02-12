@@ -34,7 +34,7 @@ function(
 
             initialize: function(config) {
                 this.config = $.extend({}, config || {});
-                _.bindAll(this, 'setVolume', 'startVideo', 'seekVideo', 'onScrollWindow');
+                _.bindAll(this, 'setVolume', 'startVideo', 'seekVideo', 'playVideo', 'onScrollWindow');
 
                 this.$background = this.$('.background');
                 this.$copy = this.$('.copy-block');
@@ -52,6 +52,7 @@ function(
                         events : {
                             onEnd : this.seekVideo,
                             onPlay : this.startVideo,
+                            onReady : this.playVideo,
                             onTrigger : this.seekVideo
                         }
                     });
@@ -84,7 +85,9 @@ function(
                 BaseAdView.prototype.play.call(this);
                 AdManager.logDebug('PartnerView.play(partner:' + this.config.dfp.ecid + ':play)');
                 this.resize(this.config.initialWidth, this.config.initialHeight);
-                this.$video.adVideo('play');
+                //will silently fail if video is not ready
+                this.$video.adVideo('play', true);
+                this.playCalled = true;
             },
             resize: function(width, height) {
                 BaseAdView.prototype.resize.call(this, width, height);
@@ -130,6 +133,12 @@ function(
 
                 level = (level < 0) ? 0 : level;
                 this.setVolume(level);
+            },
+            playVideo: function() {
+                //if video was not ready when play() was called, we'll catch it here
+                if(this.playCalled) {
+                    this.$video.adVideo('play', true);
+                }
             },
             startVideo: function() {
                 if(!this.started) {
