@@ -9,7 +9,7 @@ define([
     'http://www.gannett-cdn.com/ads/scripts/views/base-ad-view.js',
     'admanager',
     'http://www.gannett-cdn.com/ads/scripts/ad-video/jquery.ad-video.min.js',
-    'http://www.gannett-cdn.com/ads/scripts/jquery-ui-1.10.2.min.js'
+    'http://www.gannett-cdn.com/ads/scripts/jquery-ui.slider.min.js'
 ],
 function(
     $,
