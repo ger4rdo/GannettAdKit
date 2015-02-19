@@ -23,7 +23,8 @@ function(
                 'mouseenter .volume-control' : 'volumeBarShow',
                 'mouseleave .volume-control' : 'volumeBarHide',
                 // 'click .video-replay' : 'replay',
-                'click .volume-mute' : 'toggleMute'
+                'click .volume-mute' : 'toggleMute',
+                'click .partner-scroll' : 'trackGetTheNews'
             },
             firstPlay : true,
             userSetVolume : 75,
@@ -48,7 +49,7 @@ function(
                     this.$video.adVideo({
                         autoplay: 0,
                         usatcontrols: 0,
-                        video : this.options.videos[0],
+                        video : this.config.videos[0],
                         events : {
                             onEnd : this.seekVideo,
                             onPlay : this.startVideo,
@@ -139,6 +140,7 @@ function(
                 if(this.playCalled) {
                     this.$video.adVideo('play', true);
                 }
+                this.trackGetTheNews();
             },
             startVideo: function() {
                 if(!this.started) {
@@ -196,6 +198,11 @@ function(
                 } else {
                     this.$volume.removeClass('muted');
                     this.$video.adVideo('unmute');
+                }
+            },
+            trackGetTheNews: function() {
+                if(this.config.extraData.tracking && this.config.extraData.tracking.news) {
+                    this.track(this.config.extraData.tracking.news);
                 }
             },
             volumeBarHide: function() {
