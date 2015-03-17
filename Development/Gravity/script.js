@@ -43,6 +43,7 @@ function(
                 this.$volume = this.$('.volume-control');
                 this.$volumeBar = this.$('.volume-bar');
                 this.$video = this.$('.video');
+                this.$window = $(window);
 
                 //if we are not running a static image, setup video/audio
                 if(!this.staticFallback) {
@@ -128,7 +129,7 @@ function(
                 }
             },
             onScrollWindow: function() {
-                var scrollTop = $(window).scrollTop(),
+                var scrollTop = this.$window.scrollTop(),
                     scrollPercentage = (this.windowHeight - scrollTop) / this.windowHeight,
                     level = (scrollPercentage > 1) ? this.userSetVolume : Math.floor(scrollPercentage * this.userSetVolume);
 
@@ -166,7 +167,7 @@ function(
                         });
 
                         var throttleScroll = _.throttle(this.onScrollWindow, 50);
-                        $(window).on('scroll.' + this.config.dfp.ecid, throttleScroll);
+                        this.$window.on('scroll.' + this.config.dfp.ecid, throttleScroll);
 
                         this.$volume.show();
                         // this.$replay.show();
