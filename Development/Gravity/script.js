@@ -1,5 +1,5 @@
 /**
- * @fileoverview PartnerView template for elastic ads
+ * @fileoverview PartnerView template for gravity ads
  */
 
 define([
@@ -86,7 +86,6 @@ function(
             play: function() {
                 BaseAdView.prototype.play.call(this);
                 AdManager.logDebug('PartnerView.play(partner:' + this.config.dfp.ecid + ':play)');
-                this.resize(this.config.initialWidth, this.config.initialHeight);
                 //will silently fail if video is not ready
                 this.$video.adVideo('play', true);
                 this.playCalled = true;
